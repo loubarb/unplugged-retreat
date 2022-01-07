@@ -140,6 +140,14 @@ address {
   font-style: normal;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -157,7 +165,7 @@ footer {
 }
 
 header {
-  padding: 15px 0;
+  padding: 15px 0 10px 0;
 }
 
 header .content-wrapper {
@@ -167,6 +175,14 @@ header .content-wrapper {
   flex-flow: row wrap;
   margin: 0;
   width: 100%;
+}
+
+header figure {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -179,8 +195,6 @@ header .content-wrapper {
 header nav {
   width: 60%;
   text-transform: uppercase;
-  font-size: 1.125em;
-  font-weight: 700;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -195,6 +209,7 @@ header nav ul {
 
 header nav ul li {
   font-size: 1.125em;
+  font-weight: 700;
 }
 
 /* Footer */
@@ -244,10 +259,12 @@ footer .copyright {
 /* Hero area */
 
 .hero-area {
+  background: url(../img/homepage.jpg) top no-repeat #202322;
+  background-size: 270%;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: row wrap;
-  background-color: #202322;
 }
 
 .hero-area h1 {
@@ -297,6 +314,8 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/group-activities.jpg') center no-repeat #202322;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -334,12 +353,21 @@ input[type=button] {
 }
 
 .reviews h2 {
-  margin-bottom: 40px;
+  margin: 10px 0 20px 0;
+  width: 90%;
+}
+
+.reviews figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .reviews h3 {
-  width: 55%;
-  margin: 20px 0;
+  width: 65%;
+  padding-right: 0;
+ 
 }
 
 .reviews p {
@@ -525,6 +553,10 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 35%;
+  }
+
   header nav {
     width: 25%;
   }
@@ -539,9 +571,14 @@ input[type=button] {
 
   /* Hero area */
 
+  .hero-area {
+    background-size: 115%;
+  }
+
   .hero-area h1 {
     width: 90%;
     font-size: 3em;
+    line-height: 48px;
   }
 
   /* Aside */
@@ -592,11 +629,26 @@ input[type=button] {
 
   .reviews article {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .reviews figure {
+    width: 50%;
   }
 
   .reviews article div {
-    width: 49%;
+    width: 60%;
+    padding-left: 15px;
+  }
+
+  .reviews h2 {
+    width: 80%;
+    margin-bottom: 5px;
+  }
+
+  .reviews h3 {
+    width: 80%;
+    margin-top: 0;
   }
 
   .reviews p {
@@ -695,11 +747,25 @@ input[type=button] {
     line-height: 1.5em;
   }
 
+  /* Header */
+
+  header nav {
+    width: 15%;
+  }
+
   /* Hero area */
+
+  .hero-area {
+    background: url(../img/homepage.jpg) center no-repeat #202322;
+    background-size: cover;
+    height: 600px;
+  }
 
   .hero-area h1 {
     width: 75%;
     font-size: 3.75em;
+    line-height: 72px;
+    margin: 0;
   }
 
   /* Aside */
@@ -734,8 +800,13 @@ input[type=button] {
 
   /* Reviews */
 
+  .reviews h2 {
+    margin-bottom: 80px;
+  }
+
   .reviews article div {
-    width: 40%;
+    width: 45%;
+    padding-left: 30px;
   }
 
 /*---------About page-------*/
