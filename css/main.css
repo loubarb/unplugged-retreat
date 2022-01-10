@@ -134,6 +134,7 @@ h4 {
 p {
   font-size: 0.875em;
   line-height: 1.285em;
+  font-weight: 300;
 }
 
 address {
@@ -400,6 +401,14 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.mission-statement h2 {
+  margin-bottom: 20px;
+}
+
+.mission-content p {
+  margin-top: 10px;
+}
+
 .map figure {
   position: relative;
   padding-bottom: 125%;
@@ -648,7 +657,7 @@ input[type=button] {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 67%;
   }
 
   .features p {
@@ -658,6 +667,10 @@ input[type=button] {
 
 
   /* Reviews */
+
+  .reviews {
+    padding-bottom: 50px;
+  }
 
   .reviews article {
     display: flex;
@@ -670,7 +683,7 @@ input[type=button] {
 
   .reviews article div {
     width: 60%;
-    padding-left: 15px;
+    padding-left: 10px;
   }
 
   .reviews h2 {
@@ -723,11 +736,15 @@ input[type=button] {
 
   /*------About page--------*/
 
+  .mission-statement .content-wrapper,
+  .contact-section .content-wrapper {
+    margin-bottom: 75px;
+  }
+
   .mission-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
   }
 
   .mission-content p {
@@ -748,10 +765,15 @@ input[type=button] {
     align-items: flex-start;
   }
 
+  .contact-content div {
+    margin-top: 0;
+  }
+
   /*-------FAQ page-------*/
 
   .faq .content-wrapper {
     justify-content: space-between;
+    margin-bottom: 75px;
   }
 
   .faq-content {
@@ -760,6 +782,7 @@ input[type=button] {
 
   .faq h2 {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .faq h4 {
@@ -850,14 +873,11 @@ input[type=button] {
 
   .reviews article div {
     width: 45%;
-    padding-left: 30px;
+    padding-left: 35px;
   }
 
   /* Footer */
 
-  .footer-content {
-    justify-content: space-around;
-  }
 
 
 /*---------About page-------*/
@@ -872,9 +892,16 @@ input[type=button] {
     padding-bottom: 38%;
   }
 
-  .contact-content {
-    width: 73%;
+  .contact-section .content-wrapper h2 {
+    width: auto;
+    margin-bottom: 20px;
   }
+
+  .contact-section .content-wrapper h4 {
+    padding-bottom: 10px;
+  }
+
+
 
   /*---------FAQ page--------*/
 
