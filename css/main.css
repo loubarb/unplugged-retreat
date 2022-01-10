@@ -266,8 +266,8 @@ footer .copyright {
 /* Hero area */
 
 .hero-area {
-  background: url(../img/homepage.jpg) top no-repeat #202322;
-  background-size: 280%;
+  background: url(../img/homepage.jpg) center no-repeat #202322;
+  background-size: cover;
   min-height: 500px;
   display: flex;
   justify-content: center;
@@ -613,7 +613,7 @@ input[type=button] {
   /* Hero area */
 
   .hero-area {
-    background-size: 115%;
+    min-height: 600px;
   }
 
   .hero-area h1 {
@@ -821,12 +821,6 @@ input[type=button] {
   }
 
   /* Hero area */
-
-  .hero-area {
-    background: url(../img/homepage.jpg) center no-repeat #202322;
-    background-size: cover;
-    height: 600px;
-  }
 
   .hero-area h1 {
     width: 75%;
