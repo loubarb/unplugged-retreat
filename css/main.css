@@ -239,14 +239,20 @@ footer p {
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 footer .social-icons p {
+  background: #527158;
+  font-size: 1.125em;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5px;
 }
 
 footer .copyright {
@@ -260,8 +266,8 @@ footer .copyright {
 
 .hero-area {
   background: url(../img/homepage.jpg) top no-repeat #202322;
-  background-size: 270%;
-  height: 500px;
+  background-size: 280%;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: row wrap;
@@ -279,6 +285,10 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
+}
+
+aside .content-wrapper {
+  margin-top: 25px;
 }
 
 aside .form-description p {
@@ -686,12 +696,20 @@ input[type=button] {
 
   .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  .footer-content h4 {
+    margin-bottom: 40px;
   }
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
   }
 
   address p {
@@ -834,6 +852,13 @@ input[type=button] {
     width: 45%;
     padding-left: 30px;
   }
+
+  /* Footer */
+
+  .footer-content {
+    justify-content: space-around;
+  }
+
 
 /*---------About page-------*/
 
